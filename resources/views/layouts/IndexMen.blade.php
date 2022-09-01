@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{url('css/style.css')}}">
 </head>
 <body >
-<nav class="navbar navbar-expand-lg" style="background: #4a5568">
+<nav class="navbar navbar-expand-lg" style="background-color: #4a5568">
     <div class="container-fluid">
         <a class="navbar-brand" href="">
             <img width="46" src="/img/icon.jpg">
@@ -22,9 +22,6 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/men">man</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/female">woman</a>

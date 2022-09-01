@@ -25,6 +25,7 @@ Route::get('/men',[\App\Http\Controllers\StaticController::class,'men']);
 
 
 Route::resource('female',CenterController::class);
+
 Route::resource('men',MenController::class);
 
 

@@ -18,6 +18,20 @@
                             {{$message}}
                         @enderror
                     </div>
+                    <div class="mb-3">
+                        <label for="female-type" class="form-label">Product type</label>
+                        <input  id="female-type" class="form-control" name="female-type" value="{{old('female-type')}}" type="text">
+                        @error('female-type')
+                        {{$message}}
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label for="female-description" class="form-label">Product description</label>
+                        <input  id="female-description" class="form-control" name="female-description" value="{{old('female-description')}}" type="text">
+                        @error('female-description')
+                        {{$message}}
+                        @enderror
+                    </div>
 
                     <div class="mb-3">
                         <label for="female-price">Product price</label>

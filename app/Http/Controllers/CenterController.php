@@ -55,7 +55,10 @@ class CenterController extends Controller
 
         $product = new Product();
         $product->name= strip_tags($request->input('female-name'));
+        $product->type= strip_tags($request->input('female-type'));
+        $product->description= strip_tags($request->input('female-description'));
         $product->price= strip_tags($request->input('female-price'));
+
 //        $product->img= strip_tags($request->input('female-img'));
         $product->save();
 
@@ -103,6 +106,8 @@ class CenterController extends Controller
         ]);
         $to_update = Product::findorFail($id_edit);
         $to_update->name= strip_tags($request->input('female-name'));
+        $to_update->type= strip_tags($request->input('female-type'));
+        $to_update->description= strip_tags($request->input('female-description'));
         $to_update->price= strip_tags($request->input('female-price'));
 //        $to_update->img= strip_tags($request->input('female-img'));
         $to_update->save();

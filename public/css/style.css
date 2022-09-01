@@ -12,20 +12,24 @@
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
+    transition: 0.4s;
 }
 .sd:hover{
     background: limegreen;
 }
 .aa{
     padding: 5px;
+    transition: 0.4s;
 }
 .edit-btn{
     color: lightblue;
     text-decoration: underline;
     font-size: .8rem;
+    transition: 0.4s;
 }
 a{
     text-decoration: none;
+    transition: 0.4s;
 }
 a:hover {
     font-size: 1.2rem;
@@ -44,6 +48,7 @@ img{
     text-decoration: none;
     font-size: 1rem;
     color: blue;
+    transition: 0.4s;
 }
 .edit-btn:hover{
     background-color: blue;
@@ -57,6 +62,7 @@ img{
     text-decoration: none;
     font-size: 1rem;
     color: blue;
+    transition: 0.4s;
 }
 .delete-btn:hover{
     background-color: green;
@@ -95,4 +101,10 @@ footer .content-footer .end{
 }
 footer .content-footer img{
     width: 40px;
+    margin: 0.7rem;
+    transition: 0.4s;
+}
+footer .content-footer img:hover{
+    width: 60px;
+    margin: 0rem;
 }

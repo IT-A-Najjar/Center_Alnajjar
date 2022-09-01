@@ -4,6 +4,7 @@
 @endsection
 @section('content')
 
+
     <main>
         <div class="album py-5 bg-light">
             <div class="container">
@@ -13,8 +14,10 @@
                             <img src="/img/icon.jpg" width="100%" height="225">
                             <div class="card-body">
                                 <p class="card-text">
-                                <li>Name: {{$data['name']}}</li>
-                                <li>Price: {{$data['price']}} </li>
+                                <li class="py-1">Name: {{$data['name']}}</li>
+                                <li class="py-1">Name: {{$data['type']}}</li>
+                                <li class="py-1">Name: {{$data['description']}}</li>
+                                <li class="py-1">Price: {{$data['price']}} </li>
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
