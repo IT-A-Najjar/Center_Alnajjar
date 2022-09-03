@@ -29,6 +29,12 @@ class CenterController extends Controller
             'data'=>Product::all()
         ]);
     }
+    public function aa()
+    {
+        return view('femalemaster',[
+            'data'=>Product::all()
+        ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -111,19 +117,19 @@ class CenterController extends Controller
         $to_update->price= strip_tags($request->input('female-price'));
 //        $to_update->img= strip_tags($request->input('female-img'));
         $to_update->save();
-        return redirect()->route('female.show',$id_edit);
+        return redirect()->route('femalemaster.show',$id_edit);
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function destroy($id_delete)
     {
         $to_delete=Product::findorFail($id_delete);
         $to_delete->delete();
-        return redirect()->route('female.index');
+        return redirect()->route('femalemaster.index');
     }
 }

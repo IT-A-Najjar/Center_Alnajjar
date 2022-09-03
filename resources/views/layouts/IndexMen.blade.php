@@ -26,8 +26,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/female">woman</a>
                 </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="{{route('female.create')}}">create</a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('female.create')}}">create</a>
+                    <a class="nav-link" href="/login">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">register</a>
                 </li>
             </ul>
         </div>
